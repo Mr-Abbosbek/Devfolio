@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.title {
+  font-size: 50px;
+}
+.line {
+  margin-top: 5px;
+  border: 1px solid #0078ff;
+  background: #0078ff;
+}
+.container-fluid {
+  width: 100%;
+  padding: 0 200px;
+}
+
+.bg::before{
+  z-index: -3 !important;
+}
+
+
+header {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+.background::before {
+  content: "";
+  background: url("./../img/intro-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 1;
+  right: 0;
+  z-index: -1;
+}
+.navbar {
+  height: 120px;
+  padding: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+}
+
+/* Scroll bolganda qoshiladi========================================================================== */
+
+.q{
+  width: 100%;
+  height: 90px !important;
+  background-color: white;
+  box-shadow: 0 0 5px gray;
+  transition: all 0.5s ease-in-out;
+}
+.q a {
+  color: black;
+  font-weight: 600;
+}
+.q .humburger span {
+  background: black;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+ul li a {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+  width: 53%;
+  font-size: 25px;
+}
+.logo a {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.menu {
+  width: 47%;
+}
+
+/* ======================== */
+
+nav #icon {
+  height: 30px;
+  display: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.humburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.humburger span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: white;
+}
+.humburger input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.humburger span:nth-child(2) {
+  transform: translateY(-10px);
+}
+.humburger span:nth-child(5) {
+  transform: translateY(10px);
+}
+.humburger input:checked ~ span:nth-child(2) {
+  opacity: 0;
+}
+.humburger input:checked ~ span:nth-child(5) {
+  opacity: 0;
+}
+.humburger span:nth-child(3) {
+  transform: rotate(0);
+  transition: all 0.4s;
+}
+.humburger span:nth-child(4) {
+  transform: rotate(0);
+  transition: all 0.4s;
+}
+.humburger input:checked ~ span:nth-child(3) {
+  transform: rotate(135deg);
+}
+.humburger input:checked ~ span:nth-child(4) {
+  transform: rotate(-135deg);
+}
+
+.nav-input {
+  width: 160px;
+  height: 40px;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  background-color: #c3bfbc;
+}
+
+.fa-search {
+  display: inline-block;
+  position: absolute;
+  margin-top: -7px;
+  right: 50px;
+  font-size: 20px;
+}
+
+/* ========================================================================= */
+
+.developer-title {
+  text-align: center;
+  font-size: 35px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  height: 50vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.developer-text p {
+  height: 50vh;
+  color: white;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.typed-text {
+  font-weight: normal;
+  color: #ffff;
+}
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+/* =================================================================== */
+
+.about-me {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.about-me-block {
+  height: 100%;
+  display: flex;
+  background-color: white;
+  padding: 60px 50px;
+  box-shadow: 0px 0px 7px rgb(201, 201, 201);
+}
+.about-me-first {
+  width: 50%;
+  padding-right: 20px !important;
+  /* border: 1px solid #000; */
+}
+.about1-first {
+  display: flex;
+  justify-content: space-between;
+}
+.about1-first-img img {
+  border-radius: 5px;
+}
+.about1-first-text ul {
+  display: block;
+  padding-right: 35px;
+}
+.about1-first-text ul li {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.about1-first-text ul li span {
+  font-size: 17px;
+  padding-right: 5px !important;
+  font-weight: bold;
+}
+
+/* ================================================================================== */
+
+.about1-skill {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.skill-bars {
+  padding: 25px 0px;
+  width: 100%;
+  border-radius: 10px;
+  color: #000;
+}
+.skill-bars .bar {
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #6666;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  /* background: #6665ee; */
+  background: rgba(17, 17, 20, 0.9);
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line.html span {
+  width: 80%;
+}
+.bar .progress-line.css span {
+  width: 75%;
+}
+.bar .progress-line.bootstrap span {
+  width: 80%;
+}
+.bar .progress-line.js span {
+  width: 50%;
+}
+.bar .progress-line.reactJs span {
+  width: 60%;
+}
+.bar .progress-line.tailwind span {
+  width: 60%;
+}
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "80%";
+}
+.progress-line.css span::after {
+  content: "75%";
+}
+.progress-line.bootstrap span::after {
+  content: "80%";
+}
+.progress-line.js span::after {
+  content: "50%";
+}
+.progress-line.reactJs span::after {
+  content: "60%";
+}
+.progress-line.tailwind span::after {
+  content: "60%";
+}
+
+/* ============================================================================================== */
+
+.about-me-second {
+  width: 50%;
+  padding-left: 20px;
+}
+.about-me-second h1 {
+  font-size: 35px;
+}
+.about-me-second hr {
+  width: 110px;
+  height: 3px;
+}
+.about-me-second p {
+  padding-top: 30px;
+  font-size: 21px;
+  line-height: 30px;
+  color: #4e4e4e;
+}
+
+/*=============================================================== Services====================================================================== */
+
+.services-title {
+  text-align: center;
+}
+.services-line {
+  display: flex;
+  justify-content: center;
+}
+.services-title p {
+  padding: 12px 0;
+}
+.services-title hr {
+  width: 40px;
+  height: 5px;
+}
+.services-blocks{
+  width: 100%;
+  padding: 60px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services-block1 {
+  width: 31.5%;
+  height: 100%;
+  padding: 40px 22px;
+  background: white;
+  box-shadow: 0 0 2px white;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.services-block1:hover .block-icon{
+  background: #0078ff;
+  box-shadow: 0 0 0 10px #c0daf7;
+}
+.services-block1:hover .block-icon i{
+  color: white;
+}
+.services-block1 h1{
+  font-size: 25px;
+  padding: 15px 0;
+}
+.services-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.block-icon {
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 10px #0078ff;
+  border-radius: 50%;
+}
+.block-icon i {
+  font-size: 60px;
+}
+
+.ion-monitor:before {
+  content: "\f20a";
+}
+.ion-code-working:before {
+  content: "\f270";
+}
+.ion-camera:before {
+  content: "\f118";
+}
+.ion-android-phone-portrait:before {
+  content: "\f3a2";
+}
+.ion-paintbrush:before {
+  content: "\f4d5";
+}
+.ion-stats-bars:before {
+  content: "\f2b5";
+}
+
+
+
+/* ============================================================================================================================================== */
+
+.counter{
+  max-width: 100%;
+  height: 100vh;
+}
+.counter .background-2::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  content: "";
+  background: url("./../img/counters-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh !important;
+}
+.bg-before{
+  background: #0077ff;
+  opacity: .7;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+.counter-up{
+  padding: 20px 80px;
+  background: white;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+}

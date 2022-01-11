@@ -1,0 +1,230 @@
+@media (max-width: 1300.9px) {
+  .container-fluid {
+    padding: 0 70px !important;
+  }
+  .logo {
+    width: 53%;
+  }
+  .menu {
+    width: 47%;
+  }
+  .about-me {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  .about1-first-text ul {
+    display: block;
+    padding-left: 30px;
+  }
+}
+
+/* ========================================================================================================================================= */
+
+@media (max-width: 1100.9px) {
+  .logo {
+    width: 45%;
+  }
+  .menu {
+    width: 55%;
+  }
+  .about1-first-img img {
+    width: 130px;
+  }
+}
+
+/* ========================================================================================================================================= */
+
+@media (max-width: 991.9px) {
+  .container-fluid {
+    padding: 0 40px !important;
+    justify-content: center;
+  }
+  .logo {
+    width: 35%;
+  }
+  .menu {
+    width: 65%;
+  }
+  .about-me {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  .about1-first-img img {
+    width: 100px;
+    border-radius: 5px;
+  }
+  .about1-first-text ul {
+    display: block;
+    padding-left: 20px;
+    padding-right: 0 !important;
+  }
+  .about-me-second p {
+    font-size: 17px;
+  }
+  .about1-first-text ul {
+    font-size: 14px;
+  }
+  /* .services-blocks{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  } */
+  .services-block1 {
+    width: 48%;
+  }
+}
+
+/* ========================================================================================================================================= */
+
+@media (max-width: 860.9px) {
+  .container-fluid {
+    justify-content: center;
+  }
+  .logo {
+    width: 25%;
+  }
+  .menu {
+    width: 75%;
+  }
+}
+
+/* ========================================================================================================================================= */
+
+@media (max-width: 768.9px) {
+  .container-fluid {
+    padding: 0px 80px !important;
+  }
+  .navbar-sticky {
+    justify-content: space-between;
+    height: 100px;
+  }
+  nav #icon {
+    display: block;
+  }
+  .menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    /* background: rgba(222,179,126, 0.9); */
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .q .menu {
+    top: 90px;
+  }
+  .q .logo a {
+    color: black;
+  }
+  .q ul li a {
+    color: white;
+  }
+  .menu li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .menu a {
+    font-size: 20px;
+  }
+  a.active,
+  a:hover {
+    border: none;
+    color: #3498db;
+  }
+  nav .show {
+    left: 0;
+  }
+  .nav-input {
+    background: white !important;
+  }
+  .developer-title {
+    font-size: 30px;
+  }
+
+  /* ============================================= */
+
+  .about-me {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  .about-me-block {
+    display: block;
+  }
+  .about-me-first,
+  .about-me-second {
+    padding: 0 !important;
+    width: 100%;
+  }
+  .about1-first {
+    justify-content: left !important;
+  }
+  .about1-first-img img {
+    width: 100%;
+  }
+  .about1-first-text ul {
+    padding-left: 35px !important;
+  }
+
+  /* =========================================== */
+
+  .services-block1 {
+    width: 100%;
+  }
+}
+
+/* ========================================================================================================================================= */
+
+@media (max-width: 650px) {
+  .container-fluid {
+    padding: 0 40px !important;
+    /* justify-content: center; */
+  }
+  .about-me {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+/* ========================================================================================================================================= */
+
+@media (max-width: 576.9px) {
+  .container-fluid {
+    padding: 0 40px !important;
+    /* justify-content: center; */
+  }
+  .about-me {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  .about1-first{
+    display: block;
+  }
+  .about1-first-img img {
+    width: 150px !important;
+  }
+  .about1-first-text ul {
+    padding-left: 0 !important;
+    padding-top: 15px;
+  }
+  .about-me-block{
+    padding: 40px 30px !important;
+  }
+}
+
+/* ========================================================================================================================================= */
+
+@media (max-width: 400px) {
+  .developer-title {
+    font-size: 25px;
+  }
+
+  /* =========================================== */
+
+  .services-block1 h1{
+    font-size: 20px !important;
+  }
+}
