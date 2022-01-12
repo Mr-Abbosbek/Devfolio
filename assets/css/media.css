@@ -39,6 +39,12 @@
   .counters {
     padding: 110px 25px !important;
   }
+
+  /* ========================================= */
+
+  .portfolio{
+    padding-top: 55px !important;
+  }
   .port-block-text{
     padding-bottom: 40px;
   }
@@ -91,6 +97,9 @@
 
   /* ============================================== */
 
+  .portfolio{
+    padding-top: 55px !important;
+  }
   .portfolio-blocks a{
     width: 48% !important;
   }
@@ -111,7 +120,10 @@
   }
 
   /* ============================================ */
-
+  
+  .portfolio{
+    padding-top: 55px !important;
+  }
 }
 
 /* ========================================================================================================================================= */
@@ -209,6 +221,9 @@
 
   /* ========================================== */
 
+  .portfolio{
+    padding-top: 55px !important;
+  }
   .portfolio-blocks a{
     width: 48% !important;
   }
@@ -232,7 +247,7 @@
     padding-bottom: 60px !important;
   }
   .counters {
-    padding: 90px 0px !important;
+    padding: 45px 0px 90px 0px !important;
     /* border: 1px solid #000; */
   }
   .counter-block{
@@ -241,6 +256,9 @@
 
   /* ================================================ */
 
+  .portfolio{
+    padding-top: 55px !important;
+  }
 }
 
 /* ========================================================================================================================================= */
@@ -270,6 +288,9 @@
 
   /* ============================================== */
 
+  .portfolio{
+    padding-top: 55px !important;
+  }
   .portfolio-blocks a{
     width: 100% !important;
   }
@@ -296,6 +317,9 @@
 
   /* ========================================== */
 
+  .portfolio{
+    padding-top: 55px !important;
+  }
   .port-block-img{
     height: 60%;
   }

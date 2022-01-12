@@ -544,9 +544,11 @@ nav #icon {
   text-align: center;
 	color: white;
 	padding: 150px 20px;
+  /* border: 1px solid #000; */
 }
 
 .counter-block{
+  /* border: 1px solid #000; */
   width: 23%;
 }
 .counter-block h4{
