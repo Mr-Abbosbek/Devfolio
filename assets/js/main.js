@@ -9,26 +9,6 @@ window.addEventListener("scroll", function () {
       navbar.style.transition = "all 0.5s ease-in-out";
     }
   });
-  // setTimeout(function() {
-  //   if (window.scrollY > 2200) {
-  //     counters.forEach( counter => {
-  //       const animate = () => {
-  //          const value = +counter.getAttribute('akhi');
-  //          const data = +counter.innerText;
-
-  //          const time = value / speed;
-  //         if(data < value) {
-  //              counter.innerText = Math.ceil(data + time);
-  //              setTimeout(animate, 1);
-  //            }else{
-  //              counter.innerText = value;
-  //            }
-
-  //       }
-  //       animate();
-  //     });
-  //   }
-  // },3000)
   if (window.scrollY > 600) {
     bg.classList.add("bg");
   } else {
@@ -68,9 +48,9 @@ function erase() {
     typedTextSpan.textContent = textArray[textArrayIndex].substring(
       0,
       charIndex - 1
-    );
-    charIndex--;
-    setTimeout(erase, erasingDelay);
+      );
+      charIndex--;
+      setTimeout(erase, erasingDelay);
   } else {
     textArrayIndex++;
     if (textArrayIndex >= textArray.length) {
@@ -85,22 +65,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // =================================================================================================================
 
-const counters = document.querySelectorAll(".value");
-const speed = 500;
-document.addEventListener("DOMContentLoaded", function () {
-  counters.forEach((counter) => {
-    const animate = () => {
-      const value = +counter.getAttribute("akhi");
-      const data = +counter.innerText;
 
-      const time = value / speed;
-      if (data < value) {
-        counter.innerText = Math.ceil(data + time);
-        setTimeout(animate, 1);
-      } else {
-        counter.innerText = value;
-      }
-    };
-    animate();
-  });
+
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 5000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
 });
