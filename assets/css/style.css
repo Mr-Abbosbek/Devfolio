@@ -607,7 +607,6 @@ nav #icon {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  cursor: pointer;
 }
 .portfolio-blocks a{
   width: 31.5% !important;
