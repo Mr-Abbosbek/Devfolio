@@ -12,7 +12,7 @@ window.addEventListener("scroll", function () {
     }
   });
   if (allSection.scrollWidth < 769) {
-    if (window.scrollY > 4800) {
+    if (window.scrollY > 4700) {
       bg2.classList.add("bg2");
     } else {
       bg2.classList.remove("bg2");
