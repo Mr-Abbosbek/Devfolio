@@ -1,6 +1,7 @@
 window.addEventListener("scroll", function () {
   let navbar = document.querySelector(".navbar-sticky");
   let bg = document.querySelector(".background");
+  let bg2 = document.querySelector(".background-2");
   this.setTimeout(function () {
     if (window.scrollY > 1) {
       navbar.classList.add("q");
@@ -9,7 +10,14 @@ window.addEventListener("scroll", function () {
       navbar.style.transition = "all 0.5s ease-in-out";
     }
   });
-  if (window.scrollY > 600) {
+
+  if (window.scrollY > 3000) {
+    bg2.classList.add("bg2");
+  } else {
+    bg2.classList.remove("bg2");
+  }
+
+  if (window.scrollY > 900) {
     bg.classList.add("bg");
   } else {
     bg.classList.remove("bg");
@@ -82,3 +90,20 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
+
+
+
+
+// ===============================================================================================================================
+
+new Glide(".images",{
+  type: 'carousel',
+  perView: 1,
+  focusAt: 'center',
+  gap: 40,
+  // breakpoints: {
+  //   1300:{
+  //     perView: 2
+  //   }
+  // }
+}).mount();
