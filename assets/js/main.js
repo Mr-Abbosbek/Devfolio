@@ -1,4 +1,5 @@
 window.addEventListener("scroll", function () {
+  let allSection = document.querySelector(".all-section");
   let navbar = document.querySelector(".navbar-sticky");
   let bg = document.querySelector(".background");
   let bg2 = document.querySelector(".background-2");
@@ -10,18 +11,45 @@ window.addEventListener("scroll", function () {
       navbar.style.transition = "all 0.5s ease-in-out";
     }
   });
-
-  if (window.scrollY > 3000) {
-    bg2.classList.add("bg2");
+  if (allSection.scrollWidth < 769) {
+    if (window.scrollY > 4800) {
+      bg2.classList.add("bg2");
+    } else {
+      bg2.classList.remove("bg2");
+    }
+  
+    if (window.scrollY > 900) {
+      bg.classList.add("bg");
+    } else {
+      bg.classList.remove("bg");
+    }
   } else {
-    bg2.classList.remove("bg2");
+    if (window.scrollY > 3500) {
+      bg2.classList.add("bg2");
+    } else {
+      bg2.classList.remove("bg2");
+    }
+  
+    if (window.scrollY > 900) {
+      bg.classList.add("bg");
+    } else {
+      bg.classList.remove("bg");
+    }
   }
 
-  if (window.scrollY > 900) {
-    bg.classList.add("bg");
-  } else {
-    bg.classList.remove("bg");
-  }
+  if (allSection.scrollWidth <= 550) {
+    if (window.scrollY > 7000) {
+      bg2.classList.add("bg2");
+    } else {
+      bg2.classList.remove("bg2");
+    }
+  
+    if (window.scrollY > 900) {
+      bg.classList.add("bg");
+    } else {
+      bg.classList.remove("bg");
+    }
+  } 
 });
 
 // ==========================================================================================================================================
