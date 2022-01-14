@@ -11,8 +11,9 @@ window.addEventListener("scroll", function () {
       navbar.style.transition = "all 0.5s ease-in-out";
     }
   });
-  if (allSection.scrollWidth < 769) {
-    if (window.scrollY > 4700) {
+
+  if (allSection.scrollWidth < 1300) {
+    if (window.scrollY > 3000) {
       bg2.classList.add("bg2");
     } else {
       bg2.classList.remove("bg2");
@@ -23,20 +24,119 @@ window.addEventListener("scroll", function () {
     } else {
       bg.classList.remove("bg");
     }
-  } else {
+  } 
+  else {
     if (window.scrollY > 3500) {
       bg2.classList.add("bg2");
     } else {
       bg2.classList.remove("bg2");
     }
   
-    if (window.scrollY > 900) {
+    if (window.scrollY > 2000) {
       bg.classList.add("bg");
     } else {
       bg.classList.remove("bg");
     }
   }
 
+
+
+
+
+  
+  if (allSection.scrollWidth <= 1100) {
+    if (window.scrollY > 2900) {
+      bg2.classList.add("bg2");
+    } else {
+      bg2.classList.remove("bg2");
+    }
+  }
+  // else {
+  //   if (window.scrollY > 3500) {
+  //     bg2.classList.add("bg2");
+  //   } else {
+  //     bg2.classList.remove("bg2");
+  //   }
+  
+  //   if (window.scrollY > 900) {
+  //     bg.classList.add("bg");
+  //   } else {
+  //     bg.classList.remove("bg");
+  //   }
+  // }
+
+
+
+
+  if (allSection.scrollWidth < 957) {
+    if (window.scrollY > 3200) {
+      bg2.classList.add("bg2");
+    } else {
+      bg2.classList.remove("bg2");
+    }
+  }
+  // else {
+  //   if (window.scrollY > 3500) {
+  //     bg2.classList.add("bg2");
+  //   } else {
+  //     bg2.classList.remove("bg2");
+  //   }
+  
+  //   if (window.scrollY > 900) {
+  //     bg.classList.add("bg");
+  //   } else {
+  //     bg.classList.remove("bg");
+  //   }
+  // }
+
+
+
+  if (allSection.scrollWidth <= 798) {
+    if (window.scrollY > 3500) {
+      bg2.classList.add("bg2");
+    } else {
+      bg2.classList.remove("bg2");
+    }
+  }
+//  else {
+//     if (window.scrollY > 3500) {
+//       bg2.classList.add("bg2");
+//     } else {
+//       bg2.classList.remove("bg2");
+//     }
+  
+//     if (window.scrollY > 900) {
+//       bg.classList.add("bg");
+//     } else {
+//       bg.classList.remove("bg");
+//     }
+//   }
+
+
+
+
+  if (allSection.scrollWidth <= 768) {
+    if (window.scrollY > 5000) {
+      bg2.classList.add("bg2");
+    } else {
+      bg2.classList.remove("bg2");
+    }
+  } 
+  // else {
+  //   if (window.scrollY > 3500) {
+  //     bg2.classList.add("bg2");
+  //   } else {
+  //     bg2.classList.remove("bg2");
+  //   }
+  
+  //   if (window.scrollY > 900) {
+  //     bg.classList.add("bg");
+  //   } else {
+  //     bg.classList.remove("bg");
+  //   }
+  // }
+
+  
   if (allSection.scrollWidth <= 550) {
     if (window.scrollY > 7000) {
       bg2.classList.add("bg2");
@@ -49,7 +149,7 @@ window.addEventListener("scroll", function () {
     } else {
       bg.classList.remove("bg");
     }
-  } 
+  }
 });
 
 // ==========================================================================================================================================
