@@ -26,7 +26,7 @@ window.addEventListener("scroll", function () {
     }
   } 
   else {
-    if (window.scrollY > 3500) {
+    if (window.scrollY > 3100) {
       bg2.classList.add("bg2");
     } else {
       bg2.classList.remove("bg2");
@@ -45,7 +45,7 @@ window.addEventListener("scroll", function () {
 
   
   if (allSection.scrollWidth <= 1100) {
-    if (window.scrollY > 2900) {
+    if (window.scrollY > 3100) {
       bg2.classList.add("bg2");
     } else {
       bg2.classList.remove("bg2");

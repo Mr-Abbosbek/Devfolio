@@ -22,9 +22,15 @@
   .lightboxOverlay{
     width: 100% !important;
   }
+  .blog{
+    padding-top: 55px !important;
+  }
 }
 
 /* ========================================================================================================================================= */
+
+
+
 
 @media (max-width: 1100.9px) {
   .logo {
@@ -47,6 +53,12 @@
   }
   .port-block-text{
     padding-bottom: 40px;
+  }
+
+  /* ========================================= */
+
+  .blog-footer p, .blog-footer span{
+    font-size: 15px;
   }
 }
 
@@ -109,9 +121,26 @@
   .glide__slide_text{
     padding: 10px 160px;
   }
+
+  /* ============================================= */
+
+  .blog{
+    padding-top: 55px !important;
+  }
+  .blog-1{
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  .blog-footer-img a:nth-child(1){
+    width: 25% !important;
+  }
 }
 
 /* ========================================================================================================================================= */
+
+
+
+
 
 @media (max-width: 860.9px) {
   .container-fluid {
@@ -136,9 +165,19 @@
   .glide__slide_text{
     padding: 10px 130px;
   }
+
+  /* =========================================== */
+
+  /* .blog-footer p, .blog-footer span{
+    font-size: 13.5px;
+  } */
 }
 
 /* ========================================================================================================================================= */
+
+
+
+
 
 @media (max-width: 768.9px) {
   .container-fluid {
@@ -252,9 +291,17 @@
   .glide__slide_text{
     padding: 10px 0px;
   }
-  /* .glide__arrow--left,.glide__arrow--right{
-    margin-top: 160px;
-  } */
+  
+
+  /* ==================================== */
+
+  .blog-1{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .blog-footer-img a:nth-child(1){
+    width: 20% !important;
+  }
 }
 
 /* ========================================================================================================================================= */
@@ -322,9 +369,19 @@
   .glide__arrow--left,.glide__arrow--right{
     margin-top: 160px !important;
   }
+
+  /* ============================================= */
+
+  .blog-footer-img a:nth-child(1){
+    width: 25% !important;
+  }
 }
 
 /* ========================================================================================================================================= */
+
+
+
+
 
 @media (max-width: 400px) {
   .developer-title {
@@ -372,5 +429,14 @@
   }
   .glide__arrow--left,.glide__arrow--right{
     margin-top: 170px;
+  }
+
+
+  /* ======================================== */
+  .blog-footer p{
+    margin-left: 10px;
+  }
+  .blog-footer p, .blog-footer span{
+    font-size: 13.5px;
   }
 }
