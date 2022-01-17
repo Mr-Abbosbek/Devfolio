@@ -295,6 +295,9 @@
 
   /* ==================================== */
 
+  .blog{
+    padding-top: 55px !important;
+  }
   .blog-1{
     width: 100%;
     margin-bottom: 40px;
@@ -328,6 +331,12 @@
   .portfolio{
     padding-top: 55px !important;
   }
+
+  /* ================================================ */
+
+  .blog{
+    padding-top: 55px !important;
+  }
 }
 
 /* ========================================================================================================================================= */
@@ -336,6 +345,12 @@
   .container-fluid {
     padding: 0 40px !important;
     /* justify-content: center; */
+  }
+  .big-title{
+    font-size: 40px;
+  }
+  .small-title{
+    font-size: 25px;
   }
   .about-me {
     padding-top: 60px !important;
@@ -372,6 +387,9 @@
 
   /* ============================================= */
 
+  .blog{
+    padding-top: 55px !important;
+  }
   .blog-footer-img a:nth-child(1){
     width: 25% !important;
   }
