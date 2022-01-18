@@ -10,7 +10,7 @@
   }
   .about-me {
     padding-top: 60px !important;
-    padding-bottom: 60px !important;
+    padding-bottom: 50px !important;
   }
   .about1-first-text ul {
     display: block;
@@ -24,6 +24,12 @@
   }
   .blog{
     padding-top: 55px !important;
+  }
+
+  /* ============================================= */
+
+  .contact{
+    padding-top: 115px !important;
   }
 }
 
@@ -77,7 +83,7 @@
   }
   .about-me {
     padding-top: 60px !important;
-    padding-bottom: 60px !important;
+    padding-bottom: 50px !important;
   }
   .about1-first-img img {
     width: 100px;
@@ -238,7 +244,7 @@
 
   .about-me {
     padding-top: 60px !important;
-    padding-bottom: 60px !important;
+    padding-bottom: 50px !important;
   }
   .about-me-block {
     display: block;
@@ -305,6 +311,20 @@
   .blog-footer-img a:nth-child(1){
     width: 20% !important;
   }
+
+  /* ========================================= */
+
+  .contact{
+    padding-top: 115px!important;
+  }
+  .send-message{
+    width: 100% !important;
+    padding-bottom: 30px;
+  }
+  .get-in-touch{
+    width: 100%;
+    padding: 0px 25px 0px 20px;
+  }
 }
 
 /* ========================================================================================================================================= */
@@ -316,7 +336,7 @@
   }
   .about-me {
     padding-top: 60px !important;
-    padding-bottom: 60px !important;
+    padding-bottom: 50px !important;
   }
   .counters {
     padding: 45px 0px 90px 0px !important;
@@ -337,6 +357,12 @@
   .blog{
     padding-top: 55px !important;
   }
+
+  /* =============================================== */
+
+  .contact{
+    padding-top: 115px;
+  }
 }
 
 /* ========================================================================================================================================= */
@@ -354,7 +380,7 @@
   }
   .about-me {
     padding-top: 60px !important;
-    padding-bottom: 60px !important;
+    padding-bottom: 50px !important;
   }
   .about1-first{
     display: block;
@@ -392,6 +418,18 @@
   }
   .blog-footer-img a:nth-child(1){
     width: 25% !important;
+  }
+
+  /* ============================================ */
+
+  .contact{
+    padding-top: 115px !important;
+  }
+  .contact-four{
+    justify-content: space-between;
+  }
+  .contact-four a{
+    margin: 0;
   }
 }
 
@@ -456,5 +494,33 @@
   }
   .blog-footer p, .blog-footer span{
     font-size: 13.5px;
+  }
+
+  /* ======================================== */
+
+  .contact-block{
+    padding: 45px 15px;
+  }
+  .send-message, .get-in-touch{
+    padding: 0!important;
+  }
+  .send-btn{
+    font-size: 15px;
+    padding: 15px 15px !important;
+  }
+  .get-in-touch p{
+    font-size: 1.1rem;
+  }
+  .contact-icon-three font{
+    font-size: 0.9rem !important;
+  }
+  .contact-four{
+    display: flex;
+    justify-content: space-between !important;
+  }
+  .contact-four a{
+    width: 40px;
+    height: 40px;
+    margin: 18px 7px 0px 8px;
   }
 }
