@@ -431,6 +431,7 @@
   .contact-four a{
     margin: 0;
   }
+  
 }
 
 /* ========================================================================================================================================= */
@@ -501,8 +502,11 @@
   .contact-block{
     padding: 45px 15px;
   }
-  .send-message, .get-in-touch{
-    padding: 0!important;
+  .send-message{
+    padding: 0px 0px 30px 0px !important;
+  }
+  .get-in-touch{
+    padding: 0 !important;
   }
   .send-btn{
     font-size: 15px;
@@ -521,6 +525,7 @@
   .contact-four a{
     width: 40px;
     height: 40px;
+    padding-top: 4px;
     margin: 18px 7px 0px 8px;
   }
 }
