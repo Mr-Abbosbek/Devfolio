@@ -525,7 +525,7 @@
   .contact-four a{
     width: 40px;
     height: 40px;
-    /* padding-top: 4px; */
+    padding-top: 5px !important;
     margin: 18px 7px 0px 8px;
   }
 }
